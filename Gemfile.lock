@@ -11,6 +11,9 @@ GEM
     eventmachine (1.2.7)
     ffi (1.9.25)
     forwardable-extended (2.6.0)
+    haml (5.0.4)
+      temple (>= 0.8.0)
+      tilt
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -29,6 +32,9 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
+    jekyll-haml (0.1.6)
+      haml (>= 3.0.0)
+      jekyll (>= 3.3.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
@@ -60,6 +66,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    temple (0.8.0)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
@@ -67,6 +75,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.8.5)
   jekyll-feed (~> 0.6)
+  jekyll-haml
   minima (~> 2.0)
   tzinfo-data
 
