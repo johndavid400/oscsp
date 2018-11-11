@@ -2,9 +2,8 @@
 layout: default
 ---
 
-.row
-  .col
-    %h1.text-primary Hello there!
-    %p
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-      corporis ipsam cumque rerum quas quia neque, dolor vitae laboriosam.
+.row.align-items-center.justify-content-center.h-100
+  .col.col-sm-8.col-md-6.text-center
+    %form
+      {% include question/question.haml
+      text="I am assertive, demanding, and decisive." %}
