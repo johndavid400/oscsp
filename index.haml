@@ -2,8 +2,20 @@
 layout: default
 ---
 
-.row.align-items-center.justify-content-center.h-100
+.row.align-items-sm-center.justify-content-center.h-100.mt-4.mt-sm-0
   .col.col-sm-8.col-md-6.text-center
     %form
       {% include question/question.haml
       text="I am assertive, demanding, and decisive." %}
+.fixed-bottom.bg-white
+  .row.justify-content-center.p-3
+    .col.col-sm-8.col-md-6.text-center.px-sm-5
+      .progress
+        .progress-bar.bg-info{"aria-valuemax": "100", "aria-valuemin": "0",
+          "aria-valuenow": "50", role: "progressbar", style: "width: 50%"}
+  .row.justify-content-center.p-3
+    .col.col-sm-8.col-md-6.text-center.px-sm-5
+      .btn.btn-secondary.float-left
+        Prev
+      .btn.btn-secondary.float-right
+        Next
