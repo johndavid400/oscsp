@@ -1,7 +1,7 @@
 !!!
 %html{lang: "en"}
-  {% haml head.haml %}
+  {% include head.haml %}
   %body
-    .container
+    .container-fluid.h-100
       {{ content }}
-    {% haml footer.haml %}
+    {% include footer.haml %}
