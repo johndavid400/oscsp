@@ -1,0 +1,5 @@
+.btn-group-answers {
+  @extend .btn-group;
+  @extend .btn-group-toggle;
+  @extend .btn-group-vertical;
+}
