@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+    margin-top: 20px;
+}
+.question {
+    font-weight: 500;
+    margin: 30px;
+    font-size: 14pt;
+}
+
+.btn {
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    margin-bottom: 10px;
+}
+
+.btn-group-vertical {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+.back {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.pageNumber {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}

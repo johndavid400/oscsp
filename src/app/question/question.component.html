@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <img width="100" class="center-block" alt="Angular Logo" src="../assets/677428.png">
+  <p class="question">{{currentQuestion.question}}</p>
+  <div class="btn-group-vertical"> 
+    <button type="button" class="btn btn-outline-secondary btn-lg" (click)='getNextQuestion()'>Never</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" (click)='getNextQuestion()'>Rarely</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" (click)='getNextQuestion()'>Sometimes</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" (click)='getNextQuestion()'>Often</button>
+    <button type="button" class="btn btn-outline-secondary btn-lg" (click)='getNextQuestion()'>Always</button>
+  </div>
+  <div class="back">
+    <a href=# (click)='getPreviousQuestion(currentQuestion)'>Back</a>
+  </div>
+  <div class="pageNumber">
+    <p>{{currentQuestion.id}} / 20</p>
+  </div>
+</div>
+
+<!-- <p *ngFor="let x of list$">
+  {{x.question}}
+</p> -->
