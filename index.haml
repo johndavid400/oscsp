@@ -6,8 +6,7 @@ layout: default
   .col.col-sm-8.col-md-6.text-center
     %form
       {% for q in site.data.questions.profile_questions %}
-      {% include question/question.haml
-      text=q.text %}
+      {% include question/question.haml text=q.text %}
       {% endfor %}
 .fixed-bottom.bg-white
   .row.justify-content-center.p-3
