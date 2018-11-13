@@ -20,7 +20,8 @@ $(document).ready(function() {
     //if there are no more questions do stuff
     if (currentQuestion >= totalQuestions-1) {
     } else {
-      $($questions.get(currentQuestion)).hide("slide", {direction: "left"}, 600)
+      $($questions.get(currentQuestion))
+      .hide("slide", {direction: "left"}, 600)
       .queue(function() {
         //increment the current question by one
         currentQuestion += 1;
@@ -41,7 +42,8 @@ $(document).ready(function() {
     //if there are no more questions do stuff
     if (currentQuestion <= 0) {
     } else {
-      $($questions.get(currentQuestion)).hide("slide", {direction: "right"}, 600)
+      $($questions.get(currentQuestion))
+      .hide("slide", {direction: "right"}, 600)
       .queue(function() {
         //decrement the current question by one
         currentQuestion -= 1;
