@@ -22,8 +22,7 @@ $(document).ready(function() {
     if (currentQuestion >= totalQuestions-1) {
     } else {
       $($questions.get(currentQuestion))
-      .hide("slide", {direction: "left"}, 600)
-      .queue(function() {
+      .hide("slide", {direction: "left"}, 600, function() {
         //increment the current question by one
         currentQuestion += 1;
 
@@ -33,7 +32,6 @@ $(document).ready(function() {
         //otherwise show the next question
         $($questions.get(currentQuestion))
           .show("slide", {direction: "right"}, 600);
-        console.log(currentQuestion);
       });
     }
   });
@@ -44,8 +42,7 @@ $(document).ready(function() {
     if (currentQuestion <= 0) {
     } else {
       $($questions.get(currentQuestion))
-      .hide("slide", {direction: "right"}, 600)
-      .queue(function() {
+      .hide("slide", {direction: "right"}, 600, function() {
         //decrement the current question by one
         currentQuestion -= 1;
 
@@ -55,7 +52,6 @@ $(document).ready(function() {
         //otherwise show the previous question
         $($questions.get(currentQuestion))
           .show("slide", {direction: "left"}, 600);
-        console.log(currentQuestion);
       });
     }
   });
