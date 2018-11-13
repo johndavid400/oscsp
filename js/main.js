@@ -14,6 +14,7 @@ $(document).ready(function() {
 
   //Show the first question
   $($questions.get(currentQuestion)).show("slide", {direction: "right"}, 600);
+  updateProgress();
 
   //attach a click listener to the HTML element with the id of 'next'
   $('#next').click(function () {
