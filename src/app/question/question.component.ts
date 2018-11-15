@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { defineBase } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-question',
@@ -17,7 +18,6 @@ export class QuestionComponent implements OnInit {
   
   ngOnInit() {
     this.getJSON();
-    // this.currentQuestion = this.list$;
   }
   
   getJSON() {
@@ -33,11 +33,18 @@ export class QuestionComponent implements OnInit {
   getNextQuestion() {
     var i = this.currentQuestion.id;
     this.currentQuestion = this.list$[i];
+
+    // localStorage.setItem('Answers.question'+i,'1');
+    // self.indexedDB.open('test');
+
+    
   }
   
   getPreviousQuestion() {
     var i = this.currentQuestion.id - 2;
     this.currentQuestion = this.list$[i]
+
+    // console.log(localStorage.getItem('1'));
   }
 }
 
