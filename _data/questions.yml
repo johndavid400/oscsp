@@ -1,0 +1,29 @@
+profile_answers:
+  - text: Always
+    value: 5
+  - text: Often
+    value: 4
+  - text: Sometimes
+    value: 3
+  - text: Rarely
+    value: 2
+  - text: Never
+    value: 1
+gift_answers:
+  - text: Almost Always
+    value: 3
+  - text: Sometimes
+    value: 2
+  - text: Almost Never
+    value: 1
+profile_questions:
+  - text: I am assertive, demanding, and decisive.
+    category: dominance
+  - text: I enjoy doing multiple tasks at once.
+    category: dominance
+  - text: I thrive in a challenge-based environment.
+    category: dominance
+  - text: I think about tasks more than others or myself.
+    category: dominance
+  - text: I am motivated by accomplishment and authority.
+    category: dominance
