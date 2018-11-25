@@ -19,6 +19,7 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
+  gem "pry"
   gem "jekyll-haml-markup"
   gem "jekyll-paginate-v2"
 end
