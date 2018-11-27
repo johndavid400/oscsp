@@ -6,5 +6,8 @@
     {{ include.text }}
   .btn-group-answers.px-sm-5.w-100{ data: { toggle: "buttons" }}
     {% for answer in include.answers %}
-    {% include question/button.haml text=answer.text id="q1-1" name="q1" value=answer.value %}
+    {% assign id = "{{include.type}}{{include.position}}-{{answer.position}}" %}
+    {% assign name = "{{include.type}}{{include.position}}" %}
+    {% include question/button.haml text=answer.text id=id name=name
+    value=answer.value %}
     {% endfor %}

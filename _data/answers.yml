@@ -1,0 +1,39 @@
+# Answer choices for profile questions and gifts questions
+
+# Profile question answers
+profile:
+  - text: Always
+    value: 5
+    type: profile
+    position: 1
+  - text: Often
+    value: 4
+    type: profile
+    position: 2
+  - text: Sometimes
+    value: 3
+    type: profile
+    position: 3
+  - text: Rarely
+    value: 2
+    type: profile
+    position: 4
+  - text: Never
+    value: 1
+    type: profile
+    position: 5
+
+# Gift question answers
+gift:
+  - text: Almost Always
+    value: 3
+    type: gift
+    position: 1
+  - text: Sometimes
+    value: 2
+    type: gift
+    position: 2
+  - text: Almost Never
+    value: 1
+    type: gift
+    position: 3

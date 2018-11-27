@@ -2,23 +2,4 @@
 layout: default
 ---
 
-.row.align-items-sm-center.justify-content-center.h-100.mt-4.mt-sm-0
-  .col.col-sm-8.col-md-6.text-center
-    %form
-      {% for q in site.data.questions.profile_questions %}
-      {% include question/question.haml text=q.text
-      answers=site.data.questions.profile_answers %}
-      {% endfor %}
-.fixed-bottom.bg-white
-  .row.justify-content-center.p-3
-    .col.col-sm-8.col-md-6.text-center.px-sm-5
-      .progress
-        .progress-bar.bg-info#questionProgress{"aria-valuemax": "100",
-          "aria-valuemin": "0", "aria-valuenow": "0", role: "progressbar",
-          style: "width: 0%"}
-  .row.justify-content-center.p-3
-    .col.col-sm-8.col-md-6.text-center.px-sm-5
-      .btn.btn-secondary.float-left#prev
-        Prev
-      .btn.btn-secondary.float-right#next
-        Next
+Welcome to the home page

@@ -6,6 +6,12 @@ description:
 url:
 
 # Build settings
-permalink: :title/
+page_gen:
+  - data: 'questions'
+    template: 'question'
+    name: 'position'
+    dir: 'questions/profile'
+    filter_condition: "record['type'] == 'profile'"
+
 sass:
   sass_dir: css

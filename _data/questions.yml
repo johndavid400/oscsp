@@ -1,29 +1,96 @@
-profile_answers:
-  - text: Always
-    value: 5
-  - text: Often
-    value: 4
-  - text: Sometimes
-    value: 3
-  - text: Rarely
-    value: 2
-  - text: Never
-    value: 1
-gift_answers:
-  - text: Almost Always
-    value: 3
-  - text: Sometimes
-    value: 2
-  - text: Almost Never
-    value: 1
-profile_questions:
-  - text: I am assertive, demanding, and decisive.
-    category: dominance
-  - text: I enjoy doing multiple tasks at once.
-    category: dominance
-  - text: I thrive in a challenge-based environment.
-    category: dominance
-  - text: I think about tasks more than others or myself.
-    category: dominance
-  - text: I am motivated by accomplishment and authority.
-    category: dominance
+# Questions for profile test and gifts test
+
+#
+# Profile Questions
+#
+# D - Dominance
+- text: I am assertive, demanding, and decisive.
+  category: d
+  type: profile
+  position: 1
+- text: I enjoy doing multiple tasks at once.
+  category: d
+  type: profile
+  position: 2
+- text: I thrive in a challenge-based environment.
+  category: d
+  type: profile
+  position: 3
+- text: I think about tasks more than others or myself.
+  category: d
+  type: profile
+  position: 4
+- text: I am motivated by accomplishment and authority.
+  category: d
+  type: profile
+  position: 5
+
+# I - Influence
+- text: I enjoy influencing and inspiring other people.
+  category: i
+  position: 6
+  type: profile
+- text: I am optimistic about others.
+  category: i
+  position: 7
+  type: profile
+- text: I tend to be the life of the party.
+  category: i
+  position: 8
+  type: profile
+- text: I think about motivating people.
+  category: i
+  position: 9
+  type: profile
+- text: I am motivated by recognition and approval.
+  category: i
+  position: 10
+  type: profile
+
+# S - Steadiness
+- text: I thrive in consistent environments.
+  category: s
+  position: 11
+  type: profile
+- text: I prefer specifics over generalizations.
+  category: s
+  position: 12
+  type: profile
+- text: I enjoy small groups of people.
+  category: s
+  position: 13
+  type: profile
+- text: I prefer being a member of a team.
+  category: s
+  position: 14
+  type: profile
+- text: I am motivated by stability and support.
+  category: s
+  position: 15
+  type: profile
+
+# C - Conscientiousness
+- text: I typically do not take big risks.
+  category: c
+  position: 16
+  type: profile
+- text: I love tasks, order, and details.
+  category: c
+  position: 16
+  type: profile
+- text: I am right most of the time.
+  category: c
+  position: 16
+  type: profile
+- text: I comply with clearly defined rules.
+  category: c
+  position: 16
+  type: profile
+- text: I am motivated by quality and correctness.
+  category: c
+  position: 16
+  type: profile
+
+#
+# Gift questions
+#
